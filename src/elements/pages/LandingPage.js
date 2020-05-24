@@ -1,5 +1,11 @@
 import React from "react";
-
-export default function LandingPage() {
-  return <div></div>;
+import Header from "elements/parts/Header";
+export default class LandingPage extends React.Component {
+  render() {
+    return (
+      <>
+        <Header {...this.props}></Header>
+      </>
+    );
+  }
 }
